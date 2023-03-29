@@ -14,12 +14,12 @@
         <div class="login">
             <div class="LogPage">
                 <h5 class="card-title">LOGIN</h5>
-                <p>Enter your email address and password to get access your account.</p>
+                <p class="title">Enter your email address and password to get access your account.</p>
 
                 <form action="backend.php">
-                    <input class="email" type="email" name="emailId" placeholder="Email ID">
+                    <input class="email" type="email" name="emailId" placeholder="Email ID" required>
 
-                    <input class="password" type="text" placeholder="Password">
+                    <input class="password" type="text" placeholder="Password" required>
 
                     <div class="rememberme">
 
@@ -27,7 +27,7 @@
                             <input class="checkbox" type="checkbox"> Remember me</input>
                         </div>
 
-                        <span><a class="fp" href="forget.html">Forgot password? </a></span>
+                        <span><a class="fp" href="forgot.html">Forgot password? </a></span>
                     </div>
 
                     <button class="submitButton" type="submit">Login</button>
@@ -35,7 +35,7 @@
                 </form>
                 <div class="register">
                     <p class="noacc">Don't have an account? </p>
-                    <button class="registernow" type="submit">Register Now</button>
+                    <a class="fp" href="register.html"><button class="registernow">Register Now</button></a>
                 </div>
 
             </div>
