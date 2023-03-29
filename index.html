@@ -3,7 +3,9 @@
 <head>
     <title>Chronicle Cloud - Login</title>
     <link rel="stylesheet" href="index1.css">
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,21 +15,28 @@
         </div>
         <div class="login">
             <div class="LogPage">
-                <h2 class="card-title">LOGIN</h2>
+                <h1 class="card-title">LOGIN</h1>
                 <p class="title">Enter your email address and password to get access your account.</p>
 
                 <form action="backend.php">
-                        <!-- <img src="email.svg" alt=""> -->
-                        <input  class="email" type="email" name="emailId" placeholder="Email ID" required>
-                    
-                    
-                    <input class="email" type="text" placeholder="Password" required>
+                    <!-- <img src="email.svg" alt=""> -->
+                    <div class="email">
+                        <span><img src="email.svg" alt=""></span>
+                        <input type="email" name="emailId" placeholder="Email ID" required>
+                    </div>
+                    <div class="email">
+                        <span><img src="padlock.svg" alt=""></span>
+
+                        <input class="password" type="text" placeholder="Password" required>
+                    </div>
+
 
                     <div class="rememberme">
+                        <span>
 
-                        <div>
-                            <input class="checkbox" type="checkbox"> Remember me</input>
-                        </div>
+                            <input style="border-radius: 50%;" id="checkbox" class="checkbox" type="checkbox" />
+                            <span>Remember Me</span>
+                        </span>
 
                         <span><a class="fp" href="forgot.html">Forgot password? </a></span>
                     </div>
@@ -37,10 +46,21 @@
                 </form>
                 <div class="register">
                     <p class="noacc">Don't have an account? </p>
-                    <a class="fp" href="register.html"><button class="registernow">Register Now</button></a>
+                    <span>
+                        <a class="fp" href="register.html"><button type="button" class="registernow">Register
+                                Now</button></a>
+                    </span>
+
                 </div>
 
+
             </div>
+            <div class="credpara">
+                <span class="credpara">© 2022 All rights reserved | Built for Chronicle Cloud. Powered with Synapse
+                    Xtreme Engine (SXE)</span>
+
+            </div>
+
         </div>
     </div>
 
