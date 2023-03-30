@@ -3,8 +3,9 @@
 <head>
     <title>Chronicle Cloud - Login</title>
     <link rel="stylesheet" href="register.css">
-    
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,33 +15,62 @@
         </div>
         <div class="login">
             <div class="LogPage">
-                <h2 class="card-title">Registeration</h2>
+                <p class="card-title">Registeration</p>
                 <div class="steps">
-                    <span>Step1</span>
-                    <span>Step2</span>
+                    <div class="step1" >
+
+                        <p style="color: rgb(56, 108, 181);">Step 01</p>
+                    </div>
+                    <div class="step2">
+
+                        <p style="color: rgb(175, 196, 225);">Step 02</p>
+                    </div>
                 </div>
                 <div class="names">
                     <form action="backend.php">
-                        <div class="pname">
-                        <span>
-                            <input class="name1" type="text" placeholder="FirstName">
+                        <span class="names1">
 
+                            <div class="name1">
+                                <input type="text" placeholder="FirstName" required>
+                            </div>
+                            <div class="name1">
+                                <input type="text" placeholder="LastName" required>
+                            </div>
                         </span>
-                        <span>
-                            <input class="name1" type="text" placeholder="LastName">
-                        </span>
+                        
+                        <div class="email">
+                            <input type="email" placeholder="Email ID" required>
                         </div>
-                        <input type="email" class="email" placeholder="Email">
-                        <input type="tel" class="email" placeholder="Mobile Number">
-                        <h6 id="regpass" class="card-title">Create Password</h6>
+                        <div class="email">
+                            <input type="tel" placeholder="Mobile Number" required>
+
+                        </div>
+                        
+                        <p id="regpass" class="card-title">Create Password</p>
                         <p id="regpara" class="title">Password must contain one special character, one capital letter and be at least 6 characters long.</p>
-                        <input  class="email" type="password" id="pwd" name="pwd">
-                        <input  class="email" type="password" id="pwd" name="pwd">
+
+                        <div class="email">
+
+                            <input type="password" id="pwd" name="pwd" placeholder="Create Password" required>
+                        </div>
+
+                        <div class="email">
+
+                            <input  class="email" type="password" id="pwd" name="pwd" placeholder="Confirm Password" required>
+                        </div>
 
 
+                        <div class="nextstep">
+                           
 
+                            <a class="fp" href="register2.html">
+                                <button class="nextstep2" type="submit">
+                                    <p>Next Step</p> 
+                                    <img src="arrow-right.svg" alt="">
+                                </button>
+                            </a> 
+                        </div>
                     </form>
-                   <a class="fp" href="register2.html"><button class="registernow" type="submit">Next Step</button></a> 
                     <div class="register">
                         <p class="noacc">Do have an account? </p>
                         <a class="fp"href="index.html"><button class="registernow" type="submit">Login</button></a>

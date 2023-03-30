@@ -8,12 +8,12 @@ body {
 .main {
     display: flex;
     height: 100vh;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-evenly;
     align-items: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .main {
         /* border: 1px solid red; */
         /* display: flex; */
@@ -22,14 +22,17 @@ body {
 }
 
 .logo {
+    /* display: flex; */
     width: 350px;
     height: 100px;
     /* border: 2px solid red; */
+    /* align-items: center; */
 }
 
 .logo img {
     /* margin-top: 20px; */
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .login {
@@ -39,8 +42,8 @@ body {
     justify-content: center;
     border-radius: 25px;
     align-items: center;
-    font-size: 16px;
-    font-weight: 600;
+    /* font-size: 20px; */
+    
     /* text-align: center; */
     /* margin-top: 25px; */
 }
@@ -53,21 +56,22 @@ body {
     border-radius: 20px;
     border-radius: 25px;
     padding: 2px;
-    height: 465px;
+    height: 455px;
     width: 400px;
 
-    font-size: 16px;
+    /* font-size: 16px; */
     font-weight: 600;
+    padding: 30px;
 
 }
 
 
 .card-title {
-    margin-top: 30px;
-    margin-left: 30px;
+    /* margin-top: 30px; */
+    /* margin-left: 30px; */
     /* font-weight: bolder; */
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: bold;
     letter-spacing: 0px;
     color: #000000;
     text-transform: uppercase;
@@ -76,13 +80,14 @@ body {
 
 
 .title {
-    margin-left: 30px;
-    margin-right: 10px;
-    font-size: 17px;
+    /* margin-left: 30px; */
+    /* margin-right: 10px; */
+    font-size: 14px;
     letter-spacing: 0px;
     color: #000000;
     opacity: 0.5;
     font-weight: 600;
+    
 
     /* margin-left: 5px; */
 }
@@ -95,11 +100,13 @@ body {
 
 .noacc {
     text-align: left;
-    font: normal normal 600 16px/22px Open Sans;
+    font:Open Sans;
+    font-size: 14px;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    font-weight: 600;
 
 }
 
@@ -107,15 +114,18 @@ body {
 .rememberme {
     margin-top: 28px;
     display: flex;
-    justify-content: space-around;
-    font: normal normal normal 16px/22px Open Sans;
+    justify-content: space-between;
+    font: Open Sans;
+    font-size: 14px;
     margin-bottom: 15px;
     /* margin-left: ; */
+    font-weight: 600;
 }
 
 .register {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 30px;
 }
 
 .registernow {
@@ -126,14 +136,15 @@ body {
     border-radius: 6px;
     text-align: left;
     font: Open Sans;
+    font-size: 14px;
     letter-spacing: 0px;
     color: #FFFFFF;
     text-transform: uppercase;
     opacity: 1;
     padding: 10px;
     margin-top: 10px;
-    margin-left: 0px;
-    font: normal normal 600 16px/22px Open Sans;
+    font-weight: 600;
+
 }
 
 
@@ -143,14 +154,18 @@ body {
     text-transform: uppercase;
     outline: none;
     border: none;
-    width: 340px;
+    width: 398px;
     height: 53px;
     background: linear-gradient(270deg, #386CB5 0%, #669FED 100%);
+    /* background : #669FED; */
     box-shadow: 0px 0px 5px #386CB566;
     border-radius: 6px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     opacity: 1;
-    font: normal normal 600 16px/22px Open Sans;
+    font:Open Sans;
+    font-weight: 600;
+    font-size: 14px
+
 
 }
 
@@ -158,17 +173,37 @@ body {
 .fp {
     text-decoration: none;
     color: #0974DD;
-    /* font-weight: 600; */
-    font: normal normal 600 16px/22px Open Sans;
-    
+    font-weight: 600;
+    font:Open Sans;
+    font-size: 14px;    
 
 }
 
-.credpara {
-    font: normal normal normal 14px/19px Open Sans;
+.credpara2 {
+    display: block;
+    font:Open Sans;
     letter-spacing: 0px;
-    color: #000000;
-    margin-top: 18px;
+    color: #000;
+    /* margin-top: 12px; */
+    text-align: display ;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 0px;
+
+}
+.credpara1 {
+    display: block;
+    font:Open Sans;
+    letter-spacing: 0px;
+    color: #000000BF;
+    /* margin-top: 12px; */
+    justify-content: center;
+    /* font-weight: 600; */
+    font-size: 14px;
+
+}
+.credpara{
+    margin-left: 40px;
     text-align: center;
 
 }
@@ -177,15 +212,15 @@ body {
 
 .email {
     display: flex;
-    width: 340px;
+    width: 390px;
     height: 53px;
     background: #F7FAFF 0% 0% no-repeat padding-box;
     border: 1px solid #DDDDDD;
     padding-left: 6px;
     border-radius: 6px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     text-align: left;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 0px;
     opacity: 1;
@@ -210,8 +245,8 @@ body {
 }
 
 .email input {
-    width: 275px;
-    background: #F7FAFF 0% 0% no-repeat padding-box;
+    width: 310px;
+    background: #F7FAFF;
     border: none;
     outline: none;
     font-size: 16px;
@@ -221,7 +256,7 @@ body {
 .email input::placeholder {
     font-weight: 600;
     letter-spacing: 0px;
-    color: #222222;
+    color: #000000BF;
 }
 
 .email input:focus {
@@ -246,4 +281,13 @@ body {
     background-image: url("./checkmark.svg");
     object-fit: cover;
     color: white;
+}
+#password img {
+    width: 12px;
+    height: 16px;
+
+}
+.remember {
+   color : #000000BF;
+   font-size: 14px;
 }
