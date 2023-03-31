@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ed7034127.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -27,36 +28,61 @@
                     </div>
                 </div>
                 <div class="names">
-                    <form action="backend.php">
+                    <form action="backend.php" class="regform">
                         <span class="names1">
 
                             <div class="name1">
-                                <input type="text" placeholder="FirstName" required>
+                                <div class="inputbox">
+
+                                    <input type="text" required>
+                                    <label >First Name</label>
+                                </div>
                             </div>
                             <div class="name1">
-                                <input type="text" placeholder="LastName" required>
+                                <div class="inputbox">
+
+                                    <input type="text" required>
+                                    <label>Last Name</label>
+                                </div>
                             </div>
                         </span>
                         
-                        <div class="email">
-                            <input type="email" placeholder="Email ID" required>
+                        <div class="emailbox">
+                            <div class="inputbox">
+
+                                <input type="email" required>
+                                <label >Email ID</label>
+                            </div>
                         </div>
-                        <div class="email">
-                            <input type="tel" placeholder="Mobile Number" required>
+                        <div class="emailbox">
+                            <div class="inputbox">
+
+                                <input type="tel" required>
+                                <label>Mobile Number</label>
+                            </div>
 
                         </div>
                         
                         <p id="regpass" class="card-title">Create Password</p>
                         <p id="regpara" class="title">Password must contain one special character, one capital letter and be at least 6 characters long.</p>
 
-                        <div class="email">
+                        <div class="emailbox">
 
-                            <input type="password" id="pwd" name="pwd" placeholder="Create Password" required>
+                            <div class="inputbox">
+
+                                <input type="password" id="pwd" name="pwd" required>
+                                <i class="fa-solid fa-eye"></i>
+                                <label >Create Password</label>
+                            </div>
                         </div>
 
-                        <div class="email">
+                        <div class="emailbox">
+                            <div class="inputbox">
 
-                            <input  class="email" type="password" id="pwd" name="pwd" placeholder="Confirm Password" required>
+                                <input  class="email" type="password" id="pwd" name="pwd" required>
+                                <i class="fa-solid fa-eye"></i>
+                                <label>Confirm Password</label>
+                            </div>
                         </div>
 
 
@@ -71,6 +97,8 @@
                             </a> 
                         </div>
                     </form>
+
+                    <div class="border1"></div>
                     <div class="register">
                         <p class="noacc">Do have an account? </p>
                         <a class="fp"href="index.html"><button class="registernow" type="submit">Login</button></a>
@@ -79,6 +107,10 @@
                     
                 </div>
             </div>
+            <div class="credpara">
+                <p class="credpara1">© 2022 All rights reserved | Built for Chronicle Cloud. </p>
+                <p class="credpara2">Powered with SynapseXtreme Engine (SXE)</p>
+                </div>
         </div>
     </div>
 

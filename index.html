@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ed7034127.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,16 +19,31 @@
                 <h1 class="card-title">LOGIN</h1>
                 <p class="title">Enter your email address and password to get access your account.</p>
 
-                <form action="backend.php">
+                <form action="backend.php" >
                     <!-- <img src="email.svg" alt=""> -->
-                    <div class="email">
-                        <span><img src="email.svg" alt=""></span>
-                        <input type="email" name="emailId" placeholder="Email ID" required>
-                    </div>
-                    <div id="password" class="email">
-                        <span><img src="padlock.svg" alt=""></span>
+                    <div class="emailbox">
+                        <span>
+                            <img src="email.svg" alt="">
+                        </span>
 
-                        <input class="password" type="text" placeholder="Password" required>
+                            <div class="inputbox">
+
+                                <input type="email" name="emailId" id="emailId" required autocomplete="off">
+                                <label >Email ID</label>
+                            </div>
+                            <!-- <label class="e_id" for="emailId">Email ID</label> -->
+                            
+                        
+                    </div>
+                    <div id="password" class="emailbox">
+                        <span><img src="padlock.svg" alt=""></span>
+                        <div class="inputbox">
+
+                            <input class="password" type="text" required>
+                            <label>Password</label>
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+
                     </div>
 
 

@@ -156,7 +156,7 @@ body {
     border: none;
     width: 398px;
     height: 53px;
-    background: linear-gradient(270deg, #386CB5 0%, #669FED 100%);
+    background: #386CB566;
     /* background : #669FED; */
     box-shadow: 0px 0px 5px #386CB566;
     border-radius: 6px;
@@ -167,6 +167,10 @@ body {
     font-size: 14px
 
 
+}
+.submitButton :active {
+    background-color: transparent linear-gradient(270deg, #386CB5 0%, #669FED 100%);
+    transition-duration: 300ms;
 }
 
 
@@ -210,7 +214,7 @@ body {
 
 
 
-.email {
+.emailbox {
     display: flex;
     width: 390px;
     height: 53px;
@@ -228,7 +232,7 @@ body {
     
 }
 
-.email span {
+.emailbox span {
     display: block;
     height: 100%;
     width: 30px;
@@ -238,13 +242,14 @@ body {
     /* border: 1px solid red; */
 }
 
-.email span img {
+.emailbox span img {
     /* border: 1px solid red; */
     width: 16px;
     height: 12px;
 }
-
+/* 
 .email input {
+    display: inline;
     width: 310px;
     background: #F7FAFF;
     border: none;
@@ -252,14 +257,64 @@ body {
     font-size: 16px;
     color: #222222;
 }
+.email input span {
+    left: 0;
+} */
 
-.email input::placeholder {
+.inputbox {
+     /* width: 420px;
+    height: 60px; */
+    width: fit-content;
+    height: fit-content;
+    background: #f7faff 0% 0% no-repeat padding-box;
+    /* border: 1px solid #dddddd; */
+    border-radius: 6px;
+    opacity: 1;
+    position: relative;
+}
+
+
+.inputbox input {
+    width: fit-content;
+    background: #f7faff;
+    outline: none;
+    /* border: 1px solid red; */
+    height: 50px;
+    width: 330px;
+    border: none;
+}
+
+.inputbox input:not(focus):valid ~ label{
+    top: -13px;
+    font-size: 12px;
+    color: #007bff;
+    opacity: 70%;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 4px;
+    left: 0%;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    transition: 300ms;
+}
+
+.inputbox input:focus ~ label {
+    top: -12px;
+    font-size: 14px;
+    color: #007bff;
+    opacity: 70%;
+  }
+
+/* .email input::placeholder {
     font-weight: 600;
     letter-spacing: 0px;
     color: #000000BF;
-}
+} */
 
-.email input:focus {
+.inputbox input:focus {
     border-bottom: 2px solid #386CB5;
 }
 

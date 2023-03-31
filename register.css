@@ -23,12 +23,13 @@ body {
 .logo img {
     /* margin-top: 20px; */
     width: 100%;
+    /* margin-top :100px; */
 }
 
 .login {
     /* display: flex; */
     height: 600px;
-    width: 500px;
+    width: 450px;
     justify-content: center;
     border-radius: 25px;
     align-items: center;
@@ -37,6 +38,9 @@ body {
     /* overflow-y: scroll; */
     /* text-align: center; */
     /* margin-top: 25px; */
+     /* border: 2px solid red; */
+     padding: 30px;
+     /* padding-right: 27px; */
 }
 
 
@@ -54,7 +58,14 @@ body {
     /* font-size: 16px; */
     font-weight: 600;
     padding: 30px;
+    padding-top: 10px;
 
+    
+
+}
+
+.login ::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -85,7 +96,7 @@ body {
 }
 
 
-.email {
+.emailbox {
     display: flex;
     width: 390px;
     height: 40px;
@@ -103,8 +114,8 @@ body {
     
 }
 
-
-.email input {
+/* 
+.emailbox input {
     width: 350px;
     background: #F7FAFF;
     border: none;
@@ -112,37 +123,23 @@ body {
     font-size: 16px;
     color: #222222;
     
-}
+} */
 
-.email input::placeholder {
+/* .email input::placeholder {
     font-weight: 600;
     letter-spacing: 0px;
-    color: #000000BF;
+    color: #000000BF; */
     
-}
-
-.email input:focus {
+/* } */
+/* 
+.emailbox input:focus {
     border-bottom: 2px solid #386CB5;
-}
+} */
 .names1 {
     display: flex;
     
 }
-.name1 {
-    display: flex;
-    width: 195px;
-    height: 47px;
-    border: none;
-    outline: none;
-    text-align: left;
-    margin-bottom: 10px;
-    justify-content: center;
-    /* border: 3px solid red; */
-    outline: none;
-    margin-right: 27px;
-
-}
-.name1 input {
+/* .name1 input {
     display: inline;
     width: 185px;
     background: #F7FAFF;
@@ -154,12 +151,12 @@ body {
     padding-left: 12px;
     /* border: 1px solid red; */
 
-}
-.name1 input::placeholder{
+/* }  */
+/* .name1 input::placeholder{
     font-weight: 600;
     letter-spacing: 0px;
     color: #000000BF;
-}
+} */
 #regpass {
     font-size: 14px;
 }
@@ -197,7 +194,7 @@ body {
     opacity: 1;
     padding: 10px;
     font-weight: 600;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     height: 42px;
     width: 150px;
@@ -239,16 +236,17 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    flex-direction: row;
 }
 .step1{
     border-bottom: 2px solid rgba(56, 108, 181, 1);
-    width:190px;
-    border-radius: 5px;
-    border-width: 2px;
+    width: 48%;
+    border-radius: 2px;
+    border-width: 4px;
 
     /* box-sizing: border-box; */
-    flex-direction: column;
-    margin-right: 49px;
+    /* flex-direction: column; */
+    margin-right: 40px;
 
     
 }
@@ -256,11 +254,159 @@ body {
     text-align: center;
 }
 .step2 {
-    border-width: 2px;
+    border-width: 4px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.16);
-    width: 190px;
-    border-radius: 5px;
+    width: 48%;
+    border-radius: 2px;
     margin-right: 2px;
+    border-width: 4px;
+    border-radius: 2px;
+    /* flex-direction: column; */
     
     
 }
+.step2 p{
+    text-align: center;
+}
+
+
+.credpara2 {
+    display: block;
+    font:Open Sans;
+    letter-spacing: 0px;
+    color: #000;
+    /* margin-top: 12px; */
+    text-align: display ;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 0px;
+
+}
+.credpara1 {
+    display: block;
+    font:Open Sans;
+    letter-spacing: 0px;
+    color: #000000BF;
+    /* margin-top: 12px; */
+    justify-content: center;
+    /* font-weight: 600; */
+    font-size: 14px;
+
+
+}
+.credpara{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    text-align: center;
+    
+
+}
+
+.border1{
+    border: 1px solid #DDDDDD;
+    margin: 27px 0px;
+    display: block;
+
+}
+
+
+
+.inputbox {
+    /* width: 420px;
+   height: 60px; */
+   width: fit-content;
+   height: fit-content;
+   background: #f7faff 0% 0% no-repeat padding-box;
+   /* border: 1px solid #dddddd; */
+   border-radius: 6px;
+   opacity: 1;
+   position: relative;
+}
+
+
+.inputbox input {
+   width: 350px;
+   background: #f7faff;
+   outline: none;
+   /* border: 1px solid red; */
+   height: 40px;
+   /* width: 300px; */
+   padding: 4px;
+   border: none;
+}
+.inputbox label {
+   position: absolute;
+   top: 4px;
+   left: 0%;
+   padding: 10px;
+   pointer-events: none;
+   font-size: 12px;
+   transition: 300ms;
+   /* color: red; */
+}
+
+.inputbox input:focus ~ label {
+   top: -12px;
+   font-size: 14px;
+   color: #007bff;
+   opacity: 70%;
+ }
+
+/* .email input::placeholder {
+   font-weight: 600;
+   letter-spacing: 0px;
+   color: #000000BF;
+} */
+
+.inputbox input:focus {
+   border-bottom: 2px solid #386CB5;
+}
+
+
+.name1 {
+    display: flex;
+    width: 195px;
+    height: 47px;
+    border: 1px solid #DDDDDD;
+    outline: none;
+    text-align: left;
+    margin-bottom: 10px;
+    justify-content: center;
+    /* border: 3px solid red; */
+    margin-right: 24px;
+    border-radius: 6px;
+    
+
+}
+.name1 .inputbox input {
+    /* margin-left: 6px; */
+    width: 185px;
+    background: #f7faff;
+    /* outline: none; */
+    /* border: 1px solid red; */
+    height: 47px;
+    /* width: 300px; */
+    /* border: none; */
+    border-radius: 6px;
+
+}
+
+@media (max-width: 1000px) {
+    .main {
+        /* border: 1px solid red; */
+        /* display: flex; */
+        flex-direction: column;
+    }
+}
+
+
+
+
+.inputbox input:not(focus):valid ~ label{
+    top: -13px;
+    font-size: 12px;
+    color: #007bff;
+    opacity: 70%;
+}
+
