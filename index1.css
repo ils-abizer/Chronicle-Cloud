@@ -3,6 +3,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Open Sans';
+    font-size: 16px;
 }
 
 .main {
@@ -70,7 +71,7 @@ body {
     /* margin-top: 30px; */
     /* margin-left: 30px; */
     /* font-weight: bolder; */
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     letter-spacing: 0px;
     color: #000000;
@@ -82,7 +83,7 @@ body {
 .title {
     /* margin-left: 30px; */
     /* margin-right: 10px; */
-    font-size: 14px;
+    /* font-size: 14px; */
     letter-spacing: 0px;
     color: #000000;
     opacity: 0.5;
@@ -100,8 +101,7 @@ body {
 
 .noacc {
     text-align: left;
-    font:Open Sans;
-    font-size: 14px;
+    /* font-size: 14px; */
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
@@ -115,7 +115,6 @@ body {
     margin-top: 28px;
     display: flex;
     justify-content: space-between;
-    font: Open Sans;
     font-size: 14px;
     margin-bottom: 15px;
     /* margin-left: ; */
@@ -135,8 +134,7 @@ body {
     outline: none;
     border-radius: 6px;
     text-align: left;
-    font: Open Sans;
-    font-size: 14px;
+    /* font-size: 14px; */
     letter-spacing: 0px;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -162,30 +160,27 @@ body {
     border-radius: 6px;
     /* margin-left: 30px; */
     opacity: 1;
-    font:Open Sans;
     font-weight: 600;
-    font-size: 14px
+    /* font-size: 14px */
 
 
 }
-.submitButton :active {
+/* .submitButton :active {
     background-color: transparent linear-gradient(270deg, #386CB5 0%, #669FED 100%);
     transition-duration: 300ms;
-}
+} */
 
 
 .fp {
     text-decoration: none;
     color: #0974DD;
     font-weight: 600;
-    font:Open Sans;
-    font-size: 14px;    
+    /* font-size: 14px;     */
 
 }
 
 .credpara2 {
     display: block;
-    font:Open Sans;
     letter-spacing: 0px;
     color: #000;
     /* margin-top: 12px; */
@@ -197,7 +192,6 @@ body {
 }
 .credpara1 {
     display: block;
-    font:Open Sans;
     letter-spacing: 0px;
     color: #000000BF;
     /* margin-top: 12px; */
@@ -218,13 +212,13 @@ body {
     display: flex;
     width: 390px;
     height: 53px;
-    background: #F7FAFF 0% 0% no-repeat padding-box;
+    background: #F7FAFF;
     border: 1px solid #DDDDDD;
     padding-left: 6px;
     border-radius: 6px;
     /* margin-left: 30px; */
     text-align: left;
-    font-size: 14px;
+    /* font-size: 14px; */
     font-weight: 600;
     letter-spacing: 0px;
     opacity: 1;
@@ -266,7 +260,7 @@ body {
     height: 60px; */
     width: fit-content;
     height: fit-content;
-    background: #f7faff 0% 0% no-repeat padding-box;
+    background: #f7faff;
     /* border: 1px solid #dddddd; */
     border-radius: 6px;
     opacity: 1;
@@ -282,13 +276,17 @@ body {
     height: 50px;
     width: 330px;
     border: none;
+
+    padding-top: 12px;
+    font-size: 14px;
 }
 
 .inputbox input:not(focus):valid ~ label{
-    top: -13px;
-    font-size: 12px;
-    color: #007bff;
-    opacity: 70%;
+    top: -12px;
+    font-size: 14px;
+    color:#222222;
+    opacity: 40%;
+    margin-left: -8px;
 }
 
 .inputbox label {
@@ -297,15 +295,16 @@ body {
     left: 0%;
     padding: 10px;
     pointer-events: none;
-    font-size: 12px;
+    font-size: 16px;
     transition: 300ms;
 }
 
 .inputbox input:focus ~ label {
     top: -12px;
     font-size: 14px;
-    color: #007bff;
-    opacity: 70%;
+    color:#222222;
+    opacity: 40%;
+    margin-left: -8px;
   }
 
 /* .email input::placeholder {
@@ -344,5 +343,5 @@ body {
 }
 .remember {
    color : #000000BF;
-   font-size: 14px;
+   /* font-size: 14px; */
 }
