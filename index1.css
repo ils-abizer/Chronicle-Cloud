@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     font-family: 'Open Sans';
     font-size: 16px;
+    
 }
 
 .main {
@@ -63,6 +64,7 @@ body {
     /* font-size: 16px; */
     font-weight: 600;
     padding: 30px;
+    
 
 }
 
@@ -265,6 +267,7 @@ body {
     border-radius: 6px;
     opacity: 1;
     position: relative;
+    /* padding-top: 5px; */
 }
 
 
@@ -273,12 +276,14 @@ body {
     background: #f7faff;
     outline: none;
     /* border: 1px solid red; */
-    height: 50px;
+    height: 53px;
     width: 330px;
     border: none;
 
-    padding-top: 12px;
+    padding-top: 15px;
     font-size: 14px;
+    color: #777777;
+
 }
 
 .inputbox input:not(focus):valid ~ label{
@@ -297,6 +302,8 @@ body {
     pointer-events: none;
     font-size: 16px;
     transition: 300ms;
+    color: #222222;
+
 }
 
 .inputbox input:focus ~ label {
