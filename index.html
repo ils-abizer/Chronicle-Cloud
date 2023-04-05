@@ -20,7 +20,7 @@
                 <h1 class="card-title">LOGIN</h1>
                 <p class="title">Enter your email address and password to get access your account.</p>
 
-                <form action="?" onkeyup="validate()" name="myform">
+                <form action="?" onkeyup="validate()" name="myform" id="form_id">
                     <!-- <img src="email.svg" alt=""> -->
                     <div class="emailbox" id="emailbox_id">
                         <span style="margin-right: 4px;">
@@ -33,11 +33,12 @@
                                 <label >Email ID</label>
                                 <!-- <p style="color: red"></p> -->
                             </div>
-
+                            
                             <!-- <label class="e_id" for="emailId">Email ID</label> -->
                             
-                        
-                    </div>
+                            
+                        </div>
+                        <small class="errormsg"></small>
                     <div id="password" class="emailbox">
                         <span><img src="padlock.svg" alt=""></span>
                         <div class="inputbox" >
@@ -47,7 +48,7 @@
                             <!-- <i class="fa-solid fa-eye"></i> -->
                     
                             <img src="eye (1).svg" style="height: 12px; width: 20px; padding-bottom: 3px;">
-                            <span class="errormsg"></span>
+                            <small class="errormsg"></small>
                         </div>
 
                     </div>
