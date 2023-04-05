@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0ed7034127.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -19,29 +20,34 @@
                 <h1 class="card-title">LOGIN</h1>
                 <p class="title">Enter your email address and password to get access your account.</p>
 
-                <form action="?" onkeyup="myfunction(event)" >
+                <form action="?" onkeyup="validate()" name="myform">
                     <!-- <img src="email.svg" alt=""> -->
-                    <div class="emailbox">
-                        <span>
+                    <div class="emailbox" id="emailbox_id">
+                        <span style="margin-right: 4px;">
                             <img src="email.svg" alt="">
                         </span>
 
-                            <div class="inputbox">
+                            <div class="inputbox" id="input_ID">
 
-                                <input type="text" name="emailId" id="emailId" required autocomplete="off">
+                                <input type="text" name="email_Id" required autocomplete="off">
                                 <label >Email ID</label>
+                                <!-- <p style="color: red"></p> -->
                             </div>
+
                             <!-- <label class="e_id" for="emailId">Email ID</label> -->
                             
                         
                     </div>
                     <div id="password" class="emailbox">
                         <span><img src="padlock.svg" alt=""></span>
-                        <div class="inputbox">
+                        <div class="inputbox" >
 
-                            <input class="password" type="text" required>
+                            <input class="password" type="text" name="pwd" required >
                             <label>Password</label>
-                            <i class="fa-solid fa-eye"></i>
+                            <!-- <i class="fa-solid fa-eye"></i> -->
+                    
+                            <img src="eye (1).svg" style="height: 12px; width: 20px; padding-bottom: 3px;">
+                            <span class="errormsg"></span>
                         </div>
 
                     </div>

@@ -54,9 +54,7 @@ body {
 .logPage {
     /* display: flex; */
     background: #FFFFFF;
-    border-radius: 25px;
     border-radius: 20px;
-    border-radius: 25px;
     padding: 2px;
     height: 455px;
     width: 400px;
@@ -64,6 +62,7 @@ body {
     /* font-size: 16px; */
     font-weight: 600;
     padding: 30px;
+    box-shadow: 0px 1px 6px #00000029;
     
 
 }
@@ -89,7 +88,8 @@ body {
     letter-spacing: 0px;
     color: #000000;
     opacity: 0.5;
-    font-weight: 600;
+    font-weight: normal;
+    font-size: 18px;
     
 
     /* margin-left: 5px; */
@@ -117,7 +117,7 @@ body {
     margin-top: 28px;
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 15px;
     /* margin-left: ; */
     font-weight: 600;
@@ -142,8 +142,11 @@ body {
     text-transform: uppercase;
     opacity: 1;
     padding: 10px;
-    margin-top: 10px;
+    padding-left: 19px;
+    margin-top: 6px;
     font-weight: 600;
+    width: 144px;
+    height: 42px;
 
 }
 
@@ -177,7 +180,7 @@ body {
     text-decoration: none;
     color: #0974DD;
     font-weight: 600;
-    /* font-size: 14px;     */
+    font-size: 16px;    
 
 }
 
@@ -198,7 +201,7 @@ body {
     color: #000000BF;
     /* margin-top: 12px; */
     justify-content: center;
-    /* font-weight: 600; */
+    font-weight: normal;
     font-size: 14px;
 
 }
@@ -281,8 +284,9 @@ body {
     border: none;
 
     padding-top: 15px;
-    font-size: 14px;
+    font-size: 15px;
     color: #777777;
+    font-weight: normal;
 
 }
 
@@ -350,5 +354,6 @@ body {
 }
 .remember {
    color : #000000BF;
-   /* font-size: 14px; */
+   font-size: 16px;
+   font-weight: normal;
 }
