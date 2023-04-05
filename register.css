@@ -188,7 +188,7 @@ body {
 }
 .nextstep2 {
     display: flex;
-    background: transparent linear-gradient(270deg, rgba(56, 108, 181, 1) 0%, rgba(102, 159, 237, 1) 100%);
+    background: #386CB566;
     border: none;
     outline: none;
     border-radius: 6px;
