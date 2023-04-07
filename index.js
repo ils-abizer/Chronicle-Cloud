@@ -16,6 +16,39 @@ const validation =
         }
     },
 
+    "number": (value) => {
+        var contact_number_value = value;
+        var regMobile = /^\d{10}$/;
+        let is_valid = true;
+        // if (contact_number_value.length == 0) {
+        //     contact_number_error.style.visibility = "visible";
+        //     is_valid = false;
+        // }
+        if (!contact_number_value.match(regMobile)) {
+            // contact_number_error.style.visibility = "visible";
+            is_valid = false;
+        }
+        // else {
+        //     contact_number_error.style.visibility = "hidden";
+        // }
+        return {
+            is_valid: is_valid,
+            msg: "*Please Enter Valid Phone Number"
+        };
+    },
+    "confirm-password": (confirm_password) => {
+        return {
+            is_valid: (confirm_password == password_ele.value),
+            msg: "*Password Dose not Match",
+        }
+    },
+    "*": (value) => ({
+        is_valid: value.length > 0,
+        msg: "*Required",
+    }),
+
+
+
     "*": (value) => 
     ({
         is_valid: value.length > 0,

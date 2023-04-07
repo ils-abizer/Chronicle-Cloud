@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0ed7034127.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -28,40 +29,45 @@
                     </div>
                 </div>
                 <div class="names">
-                    <form action="register2.html" class="regform">
+                    <form action="register2.html" class="regform" onkeyup="validate_field(event,this)">
                         <span class="names1">
 
-                            <div class="name1">
+                            <div class="name1" id="fnamebox_id">
                                 <div class="inputbox">
 
-                                    <input type="text" required>
+                                    <input type="text" name="fname" required>
                                     <label >First Name</label>
                                 </div>
                             </div>
+                            <!-- <small class="errormsg"  id="error-fname"></small> -->
                             <div class="name1">
-                                <div class="inputbox">
+                                <div class="inputbox" id="lnamebox_id">
 
-                                    <input type="text" required>
+                                    <input type="text" name="lname" required>
                                     <label>Last Name</label>
                                 </div>
                             </div>
                         </span>
+                        <!-- <small class="errormsg"  id="error-lname"></small> -->
                         
-                        <div class="emailbox">
+                        <div class="emailbox" id="emailbox_id">
                             <div class="inputbox">
 
-                                <input type="text" required>
+                                <input type="text"  name="email" required>
                                 <label >Email ID</label>
                             </div>
                         </div>
-                        <div class="emailbox">
+                        <small class="errormsg"  id="error-email"></small>
+                        
+                        <div class="emailbox " id="numberbox_id">
                             <div class="inputbox">
 
-                                <input type="tel" required>
+                                <input type="tel" name="number" required>
                                 <label>Mobile Number</label>
                             </div>
 
                         </div>
+                        <small class="errormsg"  id="error-number"></small>
                         
                         <p id="regpass" class="card-title">Create Password</p>
                         <p id="regpara" class="title">Password must contain one special character, one capital letter and be at least 6 characters long.</p>
