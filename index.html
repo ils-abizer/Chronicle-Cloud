@@ -20,7 +20,7 @@
                 <h1 class="card-title">LOGIN</h1>
                 <p class="title">Enter your email address and password to get access your account.</p>
 
-                <form action="?" onkeyup="validate()" name="myform" id="form_id">
+                <form action="?" onkeyup="validate_field(event,this)" name="myform" id="form_id">
                     <!-- <img src="email.svg" alt=""> -->
                     <div class="emailbox" id="emailbox_id">
                         <span style="margin-right: 4px;">
@@ -29,7 +29,7 @@
 
                             <div class="inputbox" id="input_ID">
 
-                                <input type="text" name="email_Id" required autocomplete="off">
+                                <input type="text" name="email" required autocomplete="off">
                                 <label >Email ID</label>
                                 <!-- <p style="color: red"></p> -->
                             </div>
@@ -38,20 +38,20 @@
                             
                             
                         </div>
-                        <small class="errormsg"></small>
-                    <div id="password" class="emailbox">
+                        <small class="errormsg"  id="error-email"></small>
+                    <div class="emailbox" id="passwordbox_id">
                         <span><img src="padlock.svg" alt=""></span>
                         <div class="inputbox" >
 
-                            <input class="password" type="text" name="pwd" required >
+                            <input class="password" type="text" name="password" required >
                             <label>Password</label>
                             <!-- <i class="fa-solid fa-eye"></i> -->
                     
                             <img src="eye (1).svg" style="height: 12px; width: 20px; padding-bottom: 3px;">
-                            <small class="errormsg"></small>
                         </div>
-
+                        
                     </div>
+                    <small class="errormsg" id="error-password"></small>
 
 
                     <div class="rememberme">
