@@ -1,3 +1,5 @@
+// const password_ele = document.getElementById("passcode");
+
 const validation = 
 {
     "email" : (email) =>
@@ -13,7 +15,7 @@ const validation =
         return {
             "is_valid": password.length && (validatorReg.test(password)),
             "msg": "*Please enter valid password"
-        }
+        };
     },
 
     "number": (value) => {
@@ -38,23 +40,14 @@ const validation =
     },
     "confirm-password": (confirm_password) => {
         return {
-            is_valid: (confirm_password == password_ele.value),
-            msg: "*Password Dose not Match",
-        }
+            is_valid: (confirm_password == document.getElementById("passcode").value),
+            msg: "*Password Does not Match"
+        };
     },
     "*": (value) => ({
         is_valid: value.length > 0,
         msg: "*Required",
     }),
-
-
-
-    "*": (value) => 
-    ({
-        is_valid: value.length > 0,
-        msg: "*Required",
-    }),
-
 };
 
 
@@ -79,7 +72,7 @@ const show_error =(form,key,valid,msg) =>
     ele=form.querySelector(`input[name=${key}]`);
     if (valid) {
         ele.style.borderBottom = "";
-        error_ele.innerHTML = ""
+        error_element.innerHTML = ""
     } else {
         ele.style.borderBottom = "2px solid #FF0000";
         error_element.innerHTML = msg;
@@ -110,6 +103,38 @@ function validate_field(e, form) {
     let value = ele.value;
     let { is_valid, msg } = check(key, value);
     showErrorInField(ele, is_valid, msg, key);
-    // toggleButton(form);
-    console.log()
+    toggleButton(form);
+    console.log();
+}
+
+function validate_form(e) {
+    e.preventDefault();
+    let data=new FormData(e.target);
+    let is_ok=true;
+    data.forEach((value,key) => {
+        let { is_valid, msg } = check(key, value);
+        is_ok &&= is_valid;
+        show_error(e.target, key, is_valid, msg);
+        
+    });
+    return is_ok;
+}
+
+
+function validate_form_by_itself(form) {
+    let data = new FormData(form);
+    let is_ok = true;
+    data.forEach((value, key) => {
+        let { is_valid, msg } = check(key, value);
+        is_ok &&= is_valid;
+    })
+    return is_ok;
+}
+
+
+
+function toggleButton(form) {
+    let ele = form.querySelector("button[type='submit']");
+    let is_ok = validate_form_by_itself(form);
+    ele.disabled = !is_ok;
 }

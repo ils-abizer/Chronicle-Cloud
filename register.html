@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0ed7034127.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    
 </head>
 
 <body>
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="names">
-                    <form action="register2.html" class="regform" onkeyup="validate_field(event,this)">
+                    <form action="register2.html" class="regform" onkeyup="validate_field(event,this)" onsubmit="check_step01_form(event)">
                         <span class="names1">
 
                             <div class="name1" id="fnamebox_id">
@@ -39,7 +39,7 @@
                                     <label >First Name</label>
                                 </div>
                             </div>
-                            <!-- <small class="errormsg"  id="error-fname"></small> -->
+                            <small class="errormsg"  id="error-fname"></small>
                             <div class="name1">
                                 <div class="inputbox" id="lnamebox_id">
 
@@ -48,7 +48,7 @@
                                 </div>
                             </div>
                         </span>
-                        <!-- <small class="errormsg"  id="error-lname"></small> -->
+                        <small class="errormsg"  id="error-lname"></small>
                         
                         <div class="emailbox" id="emailbox_id">
                             <div class="inputbox">
@@ -72,32 +72,35 @@
                         <p id="regpass" class="card-title">Create Password</p>
                         <p id="regpara" class="title">Password must contain one special character, one capital letter and be at least 6 characters long.</p>
 
-                        <div class="emailbox">
+                        <div class="emailbox" id="passwordbox_id">
 
                             <div class="inputbox">
 
-                                <input type="password" id="pwd" name="pwd" required >
+                                <input type="password" id="passcode" name="password" required >
                                 <!-- <i class="fa-solid fa-eye"></i> -->
                                 <!-- <img src="eye (1).svg" style="height: 12px; width: 20px; padding-bottom: 3px;"> -->
                                 <label >Create Password</label>
                             </div>
                         </div>
+                        <small class="errormsg"  id="error-password"></small>
 
-                        <div class="emailbox">
+                        <div class="emailbox" id="confirm-passwordbox_id">
                             <div class="inputbox">
 
-                                <input  class="email" type="password" id="pwd" name="pwd" required>
+                                <input  class="email" type="password" id="pwd" name="confirm-password" required>
                                 <!-- <img src="eye (1).svg" style="height: 12px; width: 20px; padding-bottom: 3px;"> -->
                                 <label>Confirm Password</label>
                             </div>
                         </div>
+                        <small class="errormsg"  id="error-confirm-password"></small>
 
 
                         <div class="nextstep">
                            
 
-                            <a class="fp" href="register2.html">
-                                <button class="nextstep2" type="submit">
+                            <a class="fp" >
+                                <!-- href="register2.html" -->
+                                <button class="nextstep2" type="submit"disabled >
                                     <p>Next Step</p> 
                                     <img src="arrow-right.svg" alt="">
                                 </button>
@@ -120,6 +123,11 @@
                 </div>
         </div>
     </div>
+
+
+    <script src="index.js"></script>
+    <script src="register.js"></script>
+
 
 </body>
 

@@ -274,7 +274,7 @@ body {
 }
 .createacc {
     display: flex;
-    background: #386CB566;
+    background: transparent linear-gradient(270deg, #386CB5 0%, #669FED 100%) 0% 0% no-repeat padding-box;
     border: none;
     outline: none;
     border-radius: 6px;
@@ -292,6 +292,9 @@ body {
     width: 144px;
 }
 
+.createacc:disabled {
+    opacity: 0.5;
+}
 
 .credpara2 {
     display: block;
@@ -333,10 +336,21 @@ body {
 
 
 
+.errormsg {
+    display: block;
+    color: #FF0000;
+    font-size: 12px;
+    font-weight: normal;
+
+    
+}
+
+
+
 @media (max-width: 1000px) {
     .main {
         /* border: 1px solid red; */
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 }

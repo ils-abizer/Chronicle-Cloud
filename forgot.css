@@ -171,10 +171,22 @@ border-bottom: 2px solid #386CB5;
     border: none;
     width: 396px;
     height: 42px;
-    background: #386CB566;
+    background: transparent linear-gradient(270deg, #386CB5 0%, #669FED 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 5px #386CB566;
     border-radius: 6px;
     opacity: 1;
     /* margin-left: 6px; */
 
     }   
+.submitButton:disabled{
+    opacity: 0.5;
+}
+
+.errormsg {
+    display: block;
+    color: #FF0000;
+    font-size: 12px;
+    font-weight: normal;
+
+    
+}

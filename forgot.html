@@ -16,23 +16,34 @@
         <div class="forgot">
             <p class="card-title">FORGOT PASSWORD</p>
             <p class="title">Enter your registered email address. We will email you a new password for your account</p>
-            <form action="backend.php">
-                <div class="emailbox">
+            <form action="backend.php" onkeyup="validate_field(event,this)" onsubmit="validate_forgot_form(event)" name="myform" id="form_id">
+                <div class="emailbox" id="emailbox_id">
                     <span><img src="email.svg" alt=""></span>
 
                     <div class="inputbox">
 
-                        <input  type="text" required>
+                        <input  type="text" name="email" required>
                         <label >Email ID</label>
 
                     </div>
 
                 </div>
-                <a href="backend.php"><button class="submitButton" type="submit">RETRIEVE PASSWORD</button></a>
+                <small class="errormsg"  id="error-email"></small>
+                <a href="backend.php"><button class="submitButton" type="submit" disabled>RETRIEVE PASSWORD</button></a>
 
             </form>
 
         </div>
     </div>
+
+    <script src="index.js"></script>
+    <script>
+        function validate_forgot_form(e){
+            e.preventDefault();
+            let is_ok = validate_form(e);
+            console.log(is_ok)
+            if (is_ok) window.location.href = "index.html";
+        }
+    </script>
 </body>
 </html>

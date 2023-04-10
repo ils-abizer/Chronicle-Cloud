@@ -191,7 +191,7 @@ body {
 }
 .nextstep2 {
     display: flex;
-    background: #386CB566;
+    background: transparent linear-gradient(270deg, #386CB5 0%, #669FED 100%) 0% 0% no-repeat padding-box;
     border: none;
     outline: none;
     border-radius: 6px;
@@ -213,6 +213,9 @@ body {
     height: 10px;
 }
 
+.nextstep2:disabled{
+    opacity: 0.5;
+}
 .register {
     display: flex;
     justify-content: space-between;
@@ -477,9 +480,12 @@ body {
 
 @media (max-width: 1000px) {
     .main {
-        /* border: 1px solid red; */
         display: flex;
+        flex-wrap: nowrap;
         flex-direction: column;
+        /* border: 5px solid red; */
+        /* justify-content: space-evenly; */
+        /* align-items: center; */
     }
 }
 

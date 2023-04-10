@@ -48,44 +48,49 @@
 
                 <div class="names">
 
-                    <form action="?" class="regform">
-                        <div class="emailbox">
+                    <form action="?" class="regform" onkeyup="validate_field(event,this)" onsubmit="check_step02_form(event)">
+                        <div class="emailbox" id="schoolbox_id">
                             <div class="inputbox">
-                                <input type="text" required>
+                                <input type="text"  name="school" required>
                                 <label >School / University / Institute Name*</label>
                             </div>
                         </div>
+                        <small class="errormsg"  id="error-school"></small>
 
-                        <div class="emailbox">
+                        <div class="emailbox" id="statebox_id">
                             <div class="inputbox">
-                                <input type="text" required>
+                                <input type="text" name="state" required>
                                 <label >State*</label>
                             </div>
                         </div>
+                        <small class="errormsg"  id="error-state"></small>
 
 
-                        <div class="emailbox">
+                        <div class="emailbox" id="citybox_id">
                             <div class="inputbox">
-                                <input type="text" required>
+                                <input type="text" name="city" required>
                                 <label >City*</label>
                             </div>
                         </div>
+                        <small class="errormsg"  id="error-city"></small>
 
 
-                        <div class="emailbox">
+                        <div class="emailbox" id="countrybox_id">
                             <div class="inputbox">
-                                <input type="text" required>
+                                <input type="text" name=country required>
                                 <label >Country*</label>
                             </div>
                         </div>
+                        <small class="errormsg"  id="error-country"></small>
 
 
-                        <div class="emailbox">
+                        <div class="emailbox" id="zipcodebox_id">
                             <div class="inputbox">
-                                <input type="text" required>
+                                <input type="text" name="zipcode" required>
                                 <label >Zip Code*</label>
                             </div>
                         </div>
+                        <small class="errormsg"  id="error-zipcode"></small>
                         <div class="agreement">
                             <input style="border-radius: 50%;" id="checkbox" class="checkbox" type="checkbox" />
                             
@@ -110,7 +115,7 @@
                             </div>
                                 </span>
                             <div class="register">
-                                <button type="submit" class="createacc" id="cbutton">
+                                <button type="submit" class="createacc" id="cbutton" disabled>
                                 <p style="font: 15px; font-weight: 600; color: #FFFFFF; text-align: left;">
                                     Create Account</p>    
                                 </button>
@@ -129,6 +134,9 @@
                 </div>
         </div>
     </div>
+
+    <script src="index.js"></script>
+    <script src="register.js"></script>
 
 
 
