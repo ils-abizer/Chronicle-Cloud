@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0ed7034127.js" crossorigin="anonymous"></script>
     
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 </head>
 
 <body>
@@ -33,22 +38,23 @@
                         <span class="names1">
 
                             <div class="name1" id="fnamebox_id">
-                                <div class="inputbox">
+                                <div class="inputbox" id="fname_id">
 
                                     <input type="text" name="fname" required>
                                     <label >First Name</label>
                                 </div>
+
+                                <div class="errormsg"  id="error-fname"></div>
                             </div>
-                            <small class="errormsg"  id="error-fname"></small>
-                            <div class="name1">
+                            <div class="name1" id="lnamebox_id">
                                 <div class="inputbox" id="lnamebox_id">
 
                                     <input type="text" name="lname" required>
                                     <label>Last Name</label>
                                 </div>
+                                <div class="errormsg"  id="error-lname"></div>
                             </div>
                         </span>
-                        <small class="errormsg"  id="error-lname"></small>
                         
                         <div class="emailbox" id="emailbox_id">
                             <div class="inputbox">
@@ -62,8 +68,8 @@
                         <div class="emailbox " id="numberbox_id">
                             <div class="inputbox">
 
-                                <input type="tel" name="number" required>
-                                <label>Mobile Number</label>
+                                <input id="phone" type="tel" name="number" required>
+                                <label class="mob_label">Mobile Number</label>
                             </div>
 
                         </div>
