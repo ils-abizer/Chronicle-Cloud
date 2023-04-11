@@ -22,17 +22,17 @@ const validation =
         var contact_number_value = value;
         var regMobile = /^\d{10}$/;
         let is_valid = true;
-        // if (contact_number_value.length == 0) {
-        //     contact_number_error.style.visibility = "visible";
-        //     is_valid = false;
-        // }
-        if (!contact_number_value.match(regMobile)) {
-            // contact_number_error.style.visibility = "visible";
+        if (contact_number_value.length == 0) {
+            contact_number_error.style.visibility = "visible";
             is_valid = false;
         }
-        // else {
-        //     contact_number_error.style.visibility = "hidden";
-        // }
+        if (!contact_number_value.match(regMobile)) {
+            contact_number_error.style.visibility = "visible";
+            is_valid = false;
+        }
+        else {
+            contact_number_error.style.visibility = "hidden";
+        }
         return {
             is_valid: is_valid,
             msg: "*Please Enter Valid Phone Number"

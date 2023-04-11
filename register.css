@@ -32,7 +32,7 @@ body {
     /* display: flex; */
     /* height: 800px; */
     height: 650px;
-    width: 450px;
+    width: 400px;
     justify-content: center;
     border-radius: 25px;
     align-items: center;
@@ -444,7 +444,7 @@ body {
 /* } */
 .name1 .inputbox input {
     /* margin-left: 6px; */
-    width: 153.5px;
+    width: 154px;
     background: #f7faff;
     /* outline: none; */
     /* border: none; */
@@ -515,13 +515,9 @@ body {
 .errormsg {
     display: block;
     color: #FF0000;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: normal;
 
     
 }
 
-/* 
-.mob_label {
-    left: 60px !important;
-} */
