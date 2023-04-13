@@ -1,4 +1,4 @@
-/* 13366 * 768  */
+/* 1366 * 768  */
 body{
     padding: 0;
     margin: 0;
@@ -133,4 +133,79 @@ header {
     border-radius: 25px;
     overflow: hidden;
     margin-right: 8px;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh);
+}
+main .mainpage {
+    margin-top: 6em;
+    margin-left: 290px;
+    height: calc(100vh - 6em);
+    padding: 0 20px 0 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    width: 20%;
+    max-width: 360px;
+    /* height: 115px; */
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #0000001A;
+    border-radius: 10px;
+    padding: 10px 16px 10px 16px;
+}
+.cardtitle{
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 600;
+
+} 
+
+.cardbody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardbody .value {
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #000000;
+    font-size: 40px;
+
+}
+
+.cardbody .value span {
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+
+.cardbottom {
+    margin-top: 10px;
+    margin-bottom: 2.8px;
+}
+
+.cardbottom small {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.4;
+    font-size: 14px;
 }
