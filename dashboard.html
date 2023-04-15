@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+
 </head>
 <body>
     <header>
@@ -171,8 +174,111 @@
                     </div>
                 </div>
             </div>
+            <div class="charts">
+                <div class="barchart">
+                    <div class="lab_leg">
+        
+                        <div class="labels">
+                            <span class="Roster">Roster</span>
+                            <span>|</span>
+                            <span class="Teachers">Teachers</span>
+                        </div>
+                        
+                        <div class="legend">
+                            <div class="active">
+            
+                                <div class="l1"></div>
+                                <p>Active </p>
+                            </div>
+                            <div class="active">
+            
+                                <span class="l2"></span>
+                                <p>Inactive</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <canvas id="bar">
+                    </canvas>
+                </div>
+
+
+
+                <div class="pie-chart-container">
+                    <div class="options">
+                        <div class="data-usage">Data Usage</div>
+                        <div class="drop-down">
+                            <span>School_name_03</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <ul class="drop-down-pie-chart">
+                                <li onclick="showPieFromIndex(1)">School_name_01</li>
+                                <li onclick="showPieFromIndex(2)">School_name_02</li>
+                                <li onclick="showPieFromIndex(3)">School_name_03</li>
+                                <li onclick="showPieFromIndex(4)">School_name_04</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <canvas id="school-1"></canvas>
+                </div>
+              
+        
+            
+            </div>
+
+
+            <div class="table-container">
+                <p class="table-title">School List</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Logo</th>
+                            <th scope="col">School Name</th>
+                            <th scope="col">School Contact</th>
+                            <th scope="col">School Size <i>Roster / Teacher</i></th>
+                            <th scope="col">Data Usage</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"> <img src="../assets/img/table-1.png"></th>
+                            <td>School_Name, School name goes here… </td>
+                            <td>school_name@email.com <br> +91 731 987 321, +91 98765 43210</td>
+                            <td>176 / 12</td>
+                            <td><b>256</b><span class="text-mute">/500 mb</span></td>
+                            <td>Active</td>
+                            <td><a href="#" class="text-decoration-none"><i class="fa-solid fa-eye"></i> &nbsp; View</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"> <img src="../assets/img/table-2.png"></th>
+                            <td>Queen’s College</td>
+                            <td>Queen'scollege@email.com <br> +91 731 987 321, +91 98765 43210</td>
+                            <td>225 / 18</td>
+                            <td><b>103</b><span class="text-mute">/500 mb</span></td>
+                            <td>Active</td>
+                            <td><a href="#" class="text-decoration-none"><i class="fa-solid fa-eye"></i> &nbsp; View</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"> <img src="../assets/img/table-2.png"></th>
+                            <td>Golden International School</td>
+                            <td>Goldeninternationalschool@email.com <br> +91 731 987 321, +91 98765 43210</td>
+                            <td>364 / 30</td>
+                            <td><b>324</b><span class="text-mute">/500 mb</span></td>
+                            <td>Active</td>
+                            <td><a href="#" class="text-decoration-none"><i class="fa-solid fa-eye"></i> &nbsp; View</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
         </div>
     </main>
-
+    <script src="dashboard.js"></script>
+    <script src="pie-chart.js"></script>
+   
 </body>
 </html>
