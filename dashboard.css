@@ -151,8 +151,9 @@ main .mainpage {
 
 .cards {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    /* margin-bottom: 20px; */
+    margin: 20px;
 }
 .card {
     width: 20%;
@@ -452,6 +453,96 @@ main .mainpage {
 /* end table */
 
 
+
+.profile .drop-down {
+    display: none;
+    position: absolute;
+    width: 175px;
+    height: 160px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 4px;
+    /* display: block; */
+    padding: 6px;
+    list-style: none;
+    top: 25px;
+    cursor: pointer;
+}
+
+.profile .drop-down.active {
+    display: block;
+}
+
+.profile .drop-down li {
+    height: 33px;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+}
+
+.profile .drop-down li:hover {
+    background-color: #F5F8FF;
+}
+
+.profile .drop-down li a {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-size: 14px;
+    /* font: normal normal normal 14px/24px Inter; */
+    letter-spacing: 0px;
+    color: #222222;
+}
+
+.profile .drop-down li i {
+    margin-right: 14px;
+    font-size: 20px;
+    /* color: #FFFFFF; */
+}
+
+
+
+.sidebar-close-btn {
+    position: absolute;
+    left: 220px;
+    padding: 10px;
+    font-size: 24px;
+    display: none;
+    cursor: pointer;
+    transition: color 300ms;
+    transition: transform 300ms;
+}
+
+.sidebar-close-btn:hover {
+    color: #6a6a6a;
+    transform: scale(1.1);
+}
+
+
+.side-header .menu-button {
+    color: white;
+    font-size: 32px;
+    display: none;
+    cursor: pointer;
+}
+
+
+.profile div i {
+    font-size: 18px;
+    /* margin-left: 10px; */
+    color: white;
+}
+
+
+.sidebar .logo img {
+    width: 80%;
+    padding: 40px 20px 40px 20px;
+}
+
+
+
 @media (max-width: 1000px) {
     .cards {
         /* justify-content: space-between; */
@@ -462,4 +553,65 @@ main .mainpage {
         min-width: 42%;
         margin-top: 10px;
     }
+    .sidebar-menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        box-shadow: 0px 10px 16px #00000029;
+        border-radius: 0 10px 10px 0;
+       
+    }
+
+    main .mainpage {
+        margin-left: 0;
+    }
+
+    .side-header .menu-button {
+        display: block;
+        z-index: 90;
+    }
+
+    .sidebar-close-btn {
+        display: block;
+    }
+
+    .sidebar-menu.active {
+        display: block;
+        position: absolute;
+        z-index: 100;
+    }
 }
+
+@media (max-width: 800px) {
+    .cards {
+        /* justify-content: space-between; */
+        flex-wrap: wrap;
+    }
+
+    .cards .card {
+        min-width: 42%;
+        margin-top: 10px;
+    }
+
+    .profile .drop-down {
+        right: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .charts {
+        flex-wrap: wrap;
+    }
+
+    .charts .barchart {
+        width: 96.8%;
+    }
+
+    .charts .pie-chart-container {
+        margin-top: 20px;
+        width: 96.8%;
+    }
+}
+

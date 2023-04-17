@@ -23,6 +23,7 @@
         <div class="side-header">
         <div class="sidebar-menu">
             <div class="logo">
+                <!-- <i class="sidebar-close-btn fa fa-close" onclick="hideSidebar()"></i> -->
                 <img src="Logo.svg" alt="">
                 <hr>
 
@@ -55,6 +56,7 @@
                 </ul>
             </div>
         </div>
+        <span class="material-icons-outlined menu-button" onclick="showSidebar()">menu</span>
         <span class="title">Dashboard</span>
 
         </div>
@@ -70,13 +72,44 @@
                     <img src="lizzy.jpg" alt="">
                 </div>
                 <div class="name">Elizabeth Olsen</div>
+
+                <div onclick="toggleDropdown()" style="cursor: pointer;"><i class="fa-solid fa-angle-down"></i></div>
+                <ul class="drop-down">
+                    <!-- <ul> -->
+                    <li>
+                        <i class="material-symbols-outlined">
+                            group
+                        </i>
+                        <a>View Profile</a>
+                    </li>
+                    <li>
+                        <i class="material-symbols-outlined">
+                            web
+                        </i>
+                        <a>Visit Website</a>
+                    </li>
+                    <li>
+                        <i class="material-symbols-outlined">
+                            help_center
+                        </i>
+                        <a>Help Center</a>
+                    </li>
+                    <li onclick="directTo('login.html')">
+                        <i class="material-symbols-outlined">
+                            logout
+                        </i>
+                        <a>Sign Out</a>
+                    </li>
+                    <!-- </ul> -->
+                </ul>
+            </div>
         
         
         </div>
     </header>
 
     <main>
-        <div class="mainpage">
+        <div class="mainpage" onclick="hideAllElements()">
             <div class="cards">
                 <div class="card">
                     <div class="cardtitle">
@@ -242,7 +275,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row"> <img src="../assets/img/table-1.png"></th>
+                            <th scope="row"> <img src=""></th>
                             <td>School_Name, School name goes here… </td>
                             <td>school_name@email.com <br> +91 731 987 321, +91 98765 43210</td>
                             <td>176 / 12</td>
@@ -252,7 +285,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row"> <img src="../assets/img/table-2.png"></th>
+                            <th scope="row"> <img src=""></th>
                             <td>Queen’s College</td>
                             <td>Queen'scollege@email.com <br> +91 731 987 321, +91 98765 43210</td>
                             <td>225 / 18</td>
@@ -262,7 +295,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row"> <img src="../assets/img/table-2.png"></th>
+                            <th scope="row"> <img src=""></th>
                             <td>Golden International School</td>
                             <td>Goldeninternationalschool@email.com <br> +91 731 987 321, +91 98765 43210</td>
                             <td>364 / 30</td>
