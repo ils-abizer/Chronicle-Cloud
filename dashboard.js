@@ -1,7 +1,5 @@
 const ctx = document.getElementById('bar');
-const ctx2=document.getElementById('pie');
-
-  new Chart(ctx, {
+new Chart(ctx, {
     type: 'bar',
     data: {
       labels: ["School_Name_01",'School_Name_02','School_Name_03','School_Name_04'],
@@ -52,6 +50,8 @@ const ctx2=document.getElementById('pie');
     });
 
 
+ 
+
 var sidebar = document.getElementsByClassName("sidebar-menu")[0];
 var dropdown = document.getElementsByClassName("drop-down")[0];
 function showSidebar() {
@@ -89,4 +89,9 @@ function toggleDropdown() {
 function hideAllElements() {
   hideDropdown()
   hideSidebar()
+}
+
+
+function directTo(link) {
+  window.location.href = link;
 }

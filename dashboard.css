@@ -59,6 +59,34 @@ header {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 1;
+    z-index: 5;
+}
+
+
+.sidebar-menu ul li:hover i {
+    opacity: 1;
+}
+
+.sidebar-menu ul li:hover {
+    background-color: #F2F7FF;
+}
+
+.sidebar-menu ul li.active {
+    border-left: 2px solid #386CB5;
+    background-color: #F2F7FF;
+}
+
+.sidebar-menu ul li.active div {
+    color: #386CB5;
+}
+
+.sidebar-menu ul li.active i {
+    opacity: 1;
+}
+
+.sidebar-menu ul li:hover div {
+    font-weight: 600;
+    color: #386CB5;
 }
 
 
