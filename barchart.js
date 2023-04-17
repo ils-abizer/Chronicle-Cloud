@@ -10,7 +10,8 @@ new Chart('teacher-plot', {
         data: [250,270,160,150],
         borderWidth: 1,
         backgroundColor:['#F9AC32'],
-        barThickness :25
+        barThickness :25,
+        hoverBackgroundColor: "#5BCDA2"
       },
       {
         // label: 'Inactive',
@@ -34,6 +35,12 @@ new Chart('teacher-plot', {
         y: {
           beginAtZero: true,
           stacked: true,
+          grid :{
+            drawBorder : false,
+          },
+          border:{
+            display : false ,
+          }
         },
         x: {
             stacked:true,
@@ -63,7 +70,8 @@ new Chart('roster-plot', {
         data: [180,240,360,280],
         borderWidth: 1,
         backgroundColor:['#F9AC32'],
-        barThickness :25
+        barThickness :25,
+        hoverBackgroundColor: "#5BCDA2"
       },
       {
         // label: 'Inactive',
@@ -87,12 +95,20 @@ new Chart('roster-plot', {
         y: {
           beginAtZero: true,
           stacked: true,
+          grid :{
+            drawBorder : false,
+          },
+          border:{
+            display : false ,
+          }
         },
+       
         x: {
             stacked:true,
             grid: {
               display :false
-            }
+            },
+            
         },
         // layout:{
         //     padding:24

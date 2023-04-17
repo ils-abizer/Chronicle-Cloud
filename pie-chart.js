@@ -9,20 +9,10 @@ function createPieChart(id, xValuesSchool, yValuesSchool, pieColors) {
         }]
       },
       options: {
+        // rotation:380,
         plugins: {
-          datalabels: {
-            formatter: (value) => {
-              let sum = 0;
-              let dataArr = yValues;
-              dataArr.map(data => {
-                sum += data;
-              });
-              let percentage = (value * 100 / sum).toFixed(0) + "%";
-              return percentage;
-            },
-            color: '#fff',
-  
-          },
+          rotation : 220,
+
           labels: {
             render: (ctx) => {
               return ctx.value + " mb ";
@@ -30,6 +20,21 @@ function createPieChart(id, xValuesSchool, yValuesSchool, pieColors) {
             position: "outside",
             fontColor: pieColors
           },
+
+          datalabels: {
+            formatter: (value,ctx) => {
+              let sum = 0;
+              let dataArr = ctx.chart.data.datasets[0].data;
+              dataArr.map(data => {
+                sum += data;
+              });
+              let percentage = (value * 100 / sum).toFixed(0) + "%";
+              return percentage;
+            },
+            //color: '#fff',
+  
+          },
+         
           legend: {
             display: true,
             position: 'left',
