@@ -269,24 +269,6 @@ main .mainpage {
     background-color:#EEEEEE;
     border-radius: 50%;
 }
-
-.Roster {
-    height: 24px;
-    /* width: 40px; */
-    margin-right:15px ;
-    border-bottom: 2px solid #487FCC;
-    /* border: 2px solid green; */
-    color: #444B48;
-    font-weight: 600;
-    font-size: 18px;
-}
-.Teachers {
-    margin-left:15px ;
-    color :#444B48;
-    opacity: 0.4;
-    font-size: 18px;
-
-}
 .barchart{
     /* display: flex; */
     /* justify-content: space-between; */
@@ -296,6 +278,33 @@ main .mainpage {
     width: 46.8%;
     /* height:350px; */
     padding: 18px;
+}
+.labels .bar-tab {
+    transition: 200ms font-weight;
+}
+.labels span{
+    cursor: pointer;
+}
+.labels span.active {
+    height: 24px;
+    /* width: 40px; */
+    margin-right:7px ;
+    margin-left:7px ;
+    border-bottom: 2px solid #487FCC;
+    /* border: 2px solid green; */
+    color: #444B48;
+    font-weight: 600;
+    font-size: 18px;
+    /* padding-right: 7px; */
+}
+
+.labels span.deactive {
+    margin-right:7px ;
+    margin-left:7px ;
+    color :#444B48;
+    opacity: 0.4;
+    font-size: 18px;
+
 }
 
 .active {

@@ -64,9 +64,17 @@ function createPieChart(id, xValuesSchool, yValuesSchool, pieColors) {
   
   
   const yValuesSchool1 = [49, 23, 17, 11];
+  const yValuesSchool2 = [49, 15, 30, 21];
+  const yValuesSchool3 = [40, 20, 19, 14];
+  const yValuesSchool4 = [35, 27, 21, 98];
   
   
-  createPieChart("school-1", xValuesSchool, yValuesSchool1, pieColors);
+  
+createPieChart("school-1", xValuesSchool, yValuesSchool1, pieColors);
+createPieChart("school-2", xValuesSchool, yValuesSchool2, pieColors);
+createPieChart("school-3", xValuesSchool, yValuesSchool3, pieColors);
+createPieChart("school-4", xValuesSchool, yValuesSchool4, pieColors);
+
   
   
   function showPieFromIndex(index) {

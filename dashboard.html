@@ -212,9 +212,9 @@
                     <div class="lab_leg">
         
                         <div class="labels">
-                            <span class="Roster">Roster</span>
+                            <span class="active bar-tab" id="Roster" onclick="showRosterPlot()">Roster</span>
                             <span>|</span>
-                            <span class="Teachers">Teachers</span>
+                            <span class="deactive bar-tab" id="Teacher" onclick="showTeacherPlot()">Teachers</span>
                         </div>
                         
                         <div class="legend">
@@ -230,9 +230,8 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <canvas id="bar">
-                    </canvas>
+                    <canvas id="roster-plot"></canvas>
+                    <canvas id="teacher-plot"></canvas>
                 </div>
 
 
@@ -252,6 +251,9 @@
                         </div>
                     </div>
                     <canvas id="school-1"></canvas>
+                    <canvas id="school-2"></canvas>
+                    <canvas id="school-3"></canvas>
+                    <canvas id="school-4"></canvas>
                 </div>
               
         
@@ -277,7 +279,7 @@
                         <tr>
                             <th scope="row"> <img src="schoollogo3.png"></th>
                             <td>School_Name, School name goes here… </td>
-                            <td>school_name@email.com <br> +91 731 987 321, +91 98765 43210</td>
+                            <td>school_name@gmail.com <br> +91 731 987 321, +91 98765 43210</td>
                             <td>176 / 12</td>
                             <td><b>256</b><span class="text-mute">/500 mb</span></td>
                             <td>Active</td>
@@ -287,7 +289,7 @@
                         <tr>
                             <th scope="row"> <img src="schoollogo1.png"></th>
                             <td>MG Convent H.S. School</td>
-                            <td>mgconvent@email.com <br> +91 731 987 321, +91 98765 43210</td>
+                            <td>mgconvent@gmail.com <br> +91 731 987 321, +91 98765 43210</td>
                             <td>225 / 18</td>
                             <td><b>103</b><span class="text-mute">/500 mb</span></td>
                             <td>Active</td>
@@ -297,7 +299,7 @@
                         <tr>
                             <th scope="row"> <img src="schoollogo2.png"></th>
                             <td>Golden International School</td>
-                            <td>Goldeninternationalschool@email.com <br> +91 731 987 321, +91 98765 43210</td>
+                            <td>Goldeninternationalschool@gmail.com <br> +91 731 987 321, +91 98765 43210</td>
                             <td>364 / 30</td>
                             <td><b>324</b><span class="text-mute">/500 mb</span></td>
                             <td>Active</td>
@@ -312,6 +314,7 @@
     </main>
     <script src="dashboard.js"></script>
     <script src="pie-chart.js"></script>
+    <script src="barchart.js"></script>
    
 </body>
 </html>
