@@ -13,7 +13,7 @@
 <body>
     <div class="main">
         <div class="logo">
-            <img src="Logo.svg" alt="">
+            <img src="images/Logo.svg" alt="">
         </div>
         <div class="login">
             <div class="LogPage">
@@ -24,7 +24,7 @@
                     <!-- <img src="email.svg" alt=""> -->
                     <div class="emailbox" id="emailbox_id">
                         <span style="margin-right: 4px;">
-                            <img src="email.svg" alt="">
+                            <img src="images/email.svg" alt="">
                         </span>
 
                             <div class="inputbox" id="input_ID">
@@ -40,14 +40,16 @@
                         </div>
                         <small class="errormsg"  id="error-email"></small>
                     <div class="emailbox" id="passwordbox_id">
-                        <span><img src="padlock.svg" alt=""></span>
+                        <span><img src="images/padlock.svg" alt=""></span>
                         <div class="inputbox" >
 
-                            <input class="password" type="text" name="password" required >
+                            <input class="password" type="text" name="password" id="password"required >
                             <label>Password</label>
                             <!-- <i class="fa-solid fa-eye"></i> -->
                     
-                            <img src="eye (1).svg" style="height: 12px; width: 20px; padding-bottom: 3px;">
+                            <img src="images/eye (1).svg" 
+                            style="height: fit-content; width: 20px; padding-bottom: 5px; vertical-align: middle;"
+                            onclick="changeEye(event)"data-state="shown">
                         </div>
                         
                     </div>

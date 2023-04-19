@@ -1,4 +1,31 @@
 // const password_ele = document.getElementById("passcode");
+function changeEye(e) {
+    let state = e.target.getAttribute("data-state");
+    if (state == "shown") {
+        e.target.src = "../images/closed-eye.png"
+        e.target.setAttribute("data-state", "hidden")
+        document.getElementById("password").type = "string"
+    } else {
+        e.target.src = "../images/eye (1).svg"
+        e.target.setAttribute("data-state", "shown")
+        document.getElementById("password").type = "password"
+    }
+}
+
+function changeEye2(e) {
+    let state = e.target.getAttribute("data-state");
+    if (state == "shown") {
+        e.target.src = "../images/closed-eye.png"
+        e.target.setAttribute("data-state", "hidden")
+        document.getElementById("passcode").type = "string"
+    } else {
+        e.target.src = "../images/eye (1).svg"
+        e.target.setAttribute("data-state", "shown")
+        document.getElementById("passcode").type = "password"
+    }
+}
+
+
 
 const validation = 
 {
@@ -11,7 +38,8 @@ const validation =
         } ;
     },
     "password": (password) => {
-        let validatorReg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&]{6,}$/g;
+        // let validatorReg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&]{6,}$/g;
+        let validatorReg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{6,}$/g;
         return {
             "is_valid": password.length && (validatorReg.test(password)),
             "msg": "*Please enter valid password"
@@ -39,11 +67,24 @@ const validation =
         };
     },
     "confirm-password": (confirm_password) => {
-        return {
-            is_valid: (confirm_password == document.getElementById("passcode").value),
-            msg: "*Password Does not Match"
-        };
-    },
+        let validatorReg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{6,}$/g;
+        if (!validatorReg.test(confirm_password)){
+
+            return {
+                    is_valid: validatorReg.test(confirm_password),
+                    msg: "Please Enter Valid password"    
+                };
+        }
+        else {
+            return{
+
+                is_valid: (confirm_password == document.getElementById("passcode").value),
+                msg: "*Password Does not Match"
+            }
+        }
+        },
+
+
     "*": (value) => ({
         is_valid: value.length > 0,
         msg: "*Required",
