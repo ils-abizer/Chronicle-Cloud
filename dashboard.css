@@ -57,7 +57,7 @@ header {
 
 }
 .sidebar-menu {
-    height: 92vh;
+    height: 98vh;
     width: 260px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 10px;
@@ -186,11 +186,11 @@ main .mainpage {
     justify-content: space-between;
     /* margin-bottom: 20px; */
     margin: 20px;
-    padding: 20px;
+    /* padding: 20px; */
 }
 .card {
     width: 20%;
-    max-width: 360px;
+    max-width: 320px;
     /* height: 115px; */
 
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -248,8 +248,8 @@ main .mainpage {
 
 
 .charts{
-    padding-right:40px;
-    padding-left: 40px;
+    padding-right:20px;
+    padding-left: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
     /* padding-right: 22px; */
@@ -282,7 +282,7 @@ main .mainpage {
     
     border-radius: 10px;
     background-color: #FFFFFF;
-    width: 44%;
+    width: 46%;
     /* height:350px; */
     padding: 18px;
 }
@@ -335,7 +335,7 @@ main .mainpage {
 .charts .pie-chart-container {
     padding: 10px;
     padding-right: 15px;
-    width: 44%;
+    width: 46%;
     /* height: 350px; */
     /* margin-left: 42px; */
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -421,11 +421,11 @@ main .mainpage {
     overflow-x: auto;
     
 
-    width: 95%;
+    /* width: 100%; */
     padding: 5px 20px 10px 20px;
     /* margin-top: 20px; */
-    margin: 40px;
-    margin-right: 0px;
+    margin: 20px;
+    /* margin-right: 0px; */
     /* margin-right: 0px; */
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 1px 6px #0000001A;
