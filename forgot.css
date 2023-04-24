@@ -4,6 +4,11 @@ body {
     background-repeat: no-repeat;
     font-family: 'Open Sans';
     font-size: 16px;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+
 }
 .forgot{
     background: #FFFFFF;

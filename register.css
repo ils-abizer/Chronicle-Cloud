@@ -7,6 +7,7 @@ body {
     background-attachment: fixed;
     overflow-x: hidden;
     display: block;
+    overflow-y: hidden;
 }
 
 .main {

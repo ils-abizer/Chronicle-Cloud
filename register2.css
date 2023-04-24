@@ -4,6 +4,9 @@ body {
     background-repeat: no-repeat;
     font-family: 'Open Sans';
     font-size: 16px;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .main {
@@ -92,7 +95,7 @@ body {
 
 .steps {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 20px;
     flex-direction: row;
 }
@@ -248,7 +251,7 @@ body {
 
 #checkbox:checked {
     border: none;
-    background-image: url("./checkmark.svg");
+    background-image: url("images/checkmark.svg");
     object-fit: cover;
     color: white;
 }
