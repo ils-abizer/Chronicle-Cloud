@@ -14,7 +14,7 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 1px 6px #00000029;
     border-radius: 20px;
-    padding: 20px;
+    padding: 30px;
     height : 300px;
     width : 400px;
 }
@@ -34,6 +34,7 @@ body {
     opacity: 0.5;
     margin-bottom: 24px;
     font-weight: normal;
+    margin-top: 0;
     } 
     
     
@@ -147,6 +148,7 @@ pointer-events: none;
 font-size: 16px;
 transition: 300ms;
 color: #222222;
+font-weight: normal;
 
 }
 
@@ -180,6 +182,7 @@ border-bottom: 2px solid #386CB5;
     box-shadow: 0px 0px 5px #386CB566;
     border-radius: 6px;
     opacity: 1;
+    font-weight: normal;
     /* margin-left: 6px; */
 
     }   
