@@ -45,7 +45,7 @@ body {
     height: 100px;
     margin: 25px;
     margin-top: 0px;
-    /* border: 2px solid red; */
+     /*border: 2px solid red; */
     /* align-items: center; */
 }
 
@@ -78,7 +78,7 @@ body {
     width: 400px;
 
     /* font-size: 16px; */
-    font-weight: 600;
+    /*font-weight: 600;*/
     padding: 30px;
     box-shadow: 0px 1px 6px #00000029;
     
@@ -96,6 +96,7 @@ body {
     color: #000000;
     text-transform: uppercase;
     opacity: 1;
+    margin-top: 0;
 }
 
 
@@ -123,28 +124,28 @@ body {
     text-align: left;
     /* font-size: 14px; */
     letter-spacing: 0px;
-    color: #000000;
+    /*color: #000000;*/
     opacity: 1;
     /* margin-left: 10px; */
-    font-weight: 600;
+    font-weight: normal;
 
 }
 
 
 .rememberme {
-    margin-top: 28px;
+    margin-top: 25px;
     display: flex;
     justify-content: space-between;
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     /* margin-left: ; */
-    font-weight: 600;
+    font-weight: normal;
 }
 
 .register {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 29px;
 }
 
 .registernow {
@@ -163,7 +164,7 @@ body {
     /* padding-left: 19px; */
     margin-top: 6px;
     font-size: 16px;
-    font-weight: 600;
+    /*font-weight: 600;*/
     width: 150px;
     height: 47px;
 
@@ -184,7 +185,7 @@ body {
     border-radius: 6px;
     /* margin-left: 30px; */
     opacity: 1;
-    font-weight: 600;
+    /*font-weight: 600;*/
     font-size: 16px;
 
 
@@ -201,7 +202,7 @@ body {
 .fp {
     text-decoration: none;
     color: #0974DD;
-    font-weight: 600;
+    /*font-weight: 600;*/
     font-size: 16px;    
 
 }
@@ -225,6 +226,7 @@ body {
     justify-content: center;
     font-weight: normal;
     font-size: 14px;
+    margin-bottom: 0px;
 
 }
 .credpara{
@@ -246,7 +248,7 @@ body {
     /* margin-left: 30px; */
     text-align: left;
     /* font-size: 14px; */
-    font-weight: 600;
+    /*font-weight: 600;*/
     letter-spacing: 0px;
     opacity: 1;
     margin-bottom: 20px;
@@ -329,6 +331,7 @@ body {
     font-size: 16px;
     transition: 300ms;
     color: #222222;
+    font-weight: 500;
 
 }
 
