@@ -72,7 +72,7 @@ const validation =
 
             return {
                     is_valid: validatorReg.test(confirm_password),
-                    msg: "Please Enter Valid password"    
+                    msg: "*Please enter valid password"    
                 };
         }
         else {

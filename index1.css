@@ -315,7 +315,7 @@ body {
 }
 
 .inputbox input:not(focus):valid ~ label{
-    top: -12px;
+    top: -5px;
     font-size: 14px;
     color:#222222;
     opacity: 40%;
@@ -336,7 +336,7 @@ body {
 }
 
 .inputbox input:focus ~ label {
-    top: -12px;
+    top: -5px;
     font-size: 14px;
     color:#222222;
     opacity: 40%;

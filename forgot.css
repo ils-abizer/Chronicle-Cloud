@@ -132,7 +132,7 @@ padding: 0;
 }
 
 .inputbox input:not(focus):valid ~ label{
-top: -10px;
+top: -7px;
 font-size: 14px;
 color:#222222;
 opacity: 40%;
@@ -153,7 +153,7 @@ font-weight: normal;
 }
 
 .inputbox input:focus ~ label {
-top: -10px;
+top: -7px;
 font-size: 14px;
 color:#222222;
 opacity: 40%;

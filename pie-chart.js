@@ -10,6 +10,9 @@ function createPieChart(id, xValuesSchool, yValuesSchool, pieColors) {
       },
       options: {
         // rotation:380,
+        layout:{
+          padding:15,
+        },
         plugins: {
           rotation : 220,
 
