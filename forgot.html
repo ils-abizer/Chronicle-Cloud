@@ -24,7 +24,7 @@
 
                     <div class="inputbox">
 
-                        <input  type="text" name="email" required>
+                        <input  type="text" name="email" required autocomplete="off">
                         <label >Email ID</label>
 
                     </div>
@@ -44,7 +44,11 @@
             e.preventDefault();
             let is_ok = validate_form(e);
             console.log(is_ok)
-            if (is_ok) window.location.href = "index.html";
+            if (is_ok) 
+            {
+            alert("Password sent to the email");
+            window.location.href = "index.html";
+            }
         }
     </script>
 </body>

@@ -11,7 +11,12 @@ function check_step01_form(e) {
 function check_step02_form(e) {
     e.preventDefault();
     let is_ok = validate_form(e);
-    if (is_ok) window.location.href = "index.html";
+    if (is_ok) 
+    {
+        alert("Account Created Successfully");
+        window.location.href = "index.html";
+
+    }
     return is_ok;
 }
 
