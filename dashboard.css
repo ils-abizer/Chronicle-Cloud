@@ -53,7 +53,7 @@ header {
     font-size: 16px;
     letter-spacing: 0px;
     color: #171725;
-    font-weight: 500;
+    font-weight: normal;
 
 }
 .sidebar-menu {
@@ -232,6 +232,7 @@ main .mainpage {
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
+    font-weight: normal;
 }
 
 

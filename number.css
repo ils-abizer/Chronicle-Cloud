@@ -14,8 +14,8 @@
 
 #contact-number::placeholder {
     font-family: 'Open Sans';
-    color: #2b2828 !important;
-    font-weight: 600;
+    color:#222222 !important;
+    font-weight: 500;
 
     font-size: 16px;
 }
